@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212529;
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+nav {
+    background-color: #6e2cf4;
+
+    .nav-link {
+        color: white;
+    }
+}
+
+.hero {
+    padding: 2rem;
+    .badge {
+        padding: .5rem;
+        background-color: hsla(194, 57%, 12%, 0.788);
+        border: 2px solid #257b91;
+        margin-bottom: 1rem;
+    }
+    .links {
+        display: flex;
+        font-size: .5rem;
+        letter-spacing: 1px;
+        align-items: center;
+        * {
+        margin: .25rem;
+
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+    hr {
+        width: 5rem;
+    }
+}
+
+.copy_text {
+    background-color: grey;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 1rem;
+    i {
+        margin-left: .5rem;
+    }
+}
+
+.figma {
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-left: 1rem;
+}
+

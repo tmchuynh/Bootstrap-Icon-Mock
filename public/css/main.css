@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #212529;
+  color: white; }
+
+p {
+  margin: 0; }
+
+nav {
+  background-color: #6e2cf4; }
+  nav .nav-link {
+    color: white; }
+
+.hero {
+  padding: 2rem; }
+  .hero .badge {
+    padding: .5rem;
+    background-color: rgba(13, 40, 48, 0.788);
+    border: 2px solid #257b91;
+    margin-bottom: 1rem; }
+  .hero .links {
+    display: flex;
+    font-size: .5rem;
+    letter-spacing: 1px;
+    align-items: center; }
+    .hero .links * {
+      margin: .25rem; }
+    .hero .links a {
+      font-size: 1rem; }
+  .hero hr {
+    width: 5rem; }
+
+.copy_text {
+  background-color: grey;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 1rem; }
+  .copy_text i {
+    margin-left: .5rem; }
+
+.figma {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-left: 1rem; }
