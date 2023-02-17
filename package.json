@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch public/scss -o public/css"
@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/tmchuynh/Bootstrap-Icon-Mock/issues"
   },
-  "homepage": "https://github.com/tmchuynh/Bootstrap-Icon-Mock#readme"
+  "homepage": "https://github.com/tmchuynh/Bootstrap-Icon-Mock#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3",
+    "fs": "^0.0.1-security",
+    "requirejs": "^2.3.6"
+  }
 }

@@ -31,6 +31,7 @@ nav {
     margin-bottom: 1rem; }
   .hero .links {
     display: flex;
+    flex-wrap: wrap;
     font-size: .5rem;
     letter-spacing: 1px;
     align-items: center; }
@@ -40,6 +41,18 @@ nav {
       font-size: 1rem; }
   .hero hr {
     width: 5rem; }
+
+.icons .icon_boxes {
+  text-align: center; }
+  .icons .icon_boxes i {
+    background-color: grey;
+    border-radius: 15px;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; }
 
 .copy_text {
   background-color: grey;
