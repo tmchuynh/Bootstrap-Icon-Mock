@@ -14,6 +14,13 @@ nav {
   background-color: #6e2cf4; }
   nav .nav-link {
     color: white; }
+  nav .nav-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    nav .nav-icons * {
+      margin: .25rem; }
 
 .hero {
   padding: 2rem; }

@@ -19,6 +19,15 @@ nav {
     .nav-link {
         color: white;
     }
+    .nav-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        * {
+            margin: .25rem;
+        }
+    }
 }
 
 .hero {
@@ -45,6 +54,7 @@ nav {
     hr {
         width: 5rem;
     }
+
 }
 
 .copy_text {
