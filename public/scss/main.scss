@@ -5,8 +5,31 @@
 }
 
 body {
-    background-color: #212529;
-    color: white;
+    --text-dark: #212529;
+    --text-light: #fff;
+
+    --badge-background: #cff4fc;
+    --badge-text-color: #3679ae;
+
+    --dark-background: #343a41;
+    --grey-background: #e9ecef;
+    --purple-background: #7431f9;
+
+    --background-color: #fff;
+}
+
+.dark {
+    --text-dark: #fff;
+    --text-light: #fff;
+
+    --badge-background: hsla(194, 57%, 12%, 0.788);
+    --badge-text-color: #257b91;
+
+    --dark-background: #343a41;
+    --grey-background: #343a41;
+    --purple-background: #6e2cf4;
+
+    --background-color: #212529;
 }
 
 p {
@@ -14,10 +37,10 @@ p {
 }
 
 nav {
-    background-color: #6e2cf4;
+    background-color: var(--purple-background);
 
     .nav-link {
-        color: white;
+        color: var(--text-light);
     }
 
     .nav-icons {
@@ -37,9 +60,10 @@ nav {
 
     .badge {
         padding: .5rem;
-        background-color: hsla(194, 57%, 12%, 0.788);
-        border: 2px solid #257b91;
+        background-color: var(--badge-background);
+        border: 2px solid var(--badge-text-color);
         margin-bottom: 1rem;
+        color: var(--badge-text-color);
     }
 
     .links {
@@ -67,17 +91,31 @@ nav {
 
 .icons {
     .icon_boxes {
+        display: flex;
         text-align: center;
-        i {
-            background-color: grey;
-            border-radius: 15px;
-            width: 5rem;
-            height: 5rem;
+        color: var(--text-dark);
+
+        .box {
             display: flex;
+            flex-wrap: wrap;
+            margin: 1rem;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-size: 1.5rem;
+
+            i {
+                background-color: var(--dark-background);
+                color: var(--text-light);
+                border-radius: 15px;
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+            }
         }
+
     }
 }
 
