@@ -101,7 +101,8 @@ nav {
   .installation .package-container,
   .installation .download,
   .installation .CDN {
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    padding: 0rem 1rem; }
 
 .copy_text {
   background-color: var(--dark-background);
@@ -115,10 +116,6 @@ nav {
   overflow-x: scroll;
   overflow-y: hidden;
   position: relative; }
-  .copy_text p {
-    margin-right: 2rem;
-    width: 25rem;
-    height: 3rem; }
   .copy_text i {
     margin-left: .5rem;
     z-index: 2;
@@ -128,6 +125,37 @@ nav {
     right: -17px;
     top: -10px;
     color: var(--text-light); }
+  .copy_text.max-height {
+    height: 8.9rem; }
+  .copy_text p {
+    margin-right: 2rem;
+    width: 25rem;
+    height: 3rem; }
+
+.example {
+  background-color: var(--dark-background);
+  display: flex;
+  flex-direction: column;
+  overflow-y: visible;
+  border-radius: 15px;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 0;
+  height: fit-content; }
+  .example .example_code {
+    padding: .5rem;
+    justify-content: center;
+    align-items: center; }
+    .example .example_code .bi {
+      padding: 2rem;
+      margin: auto;
+      font-size: 3rem;
+      color: var(--text-light); }
+  .example div {
+    border: 1px solid var(--text-light);
+    width: 100%;
+    margin: 0;
+    border-radius: 0; }
 
 ::-webkit-scrollbar {
   color: var(--grey-background);

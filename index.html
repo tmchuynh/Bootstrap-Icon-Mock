@@ -180,7 +180,7 @@
                 <p>Install <a href="https://www.npmjs.com/package/bootstrap-icons">Bootstrap Icons</a> -- including
                     SVGs, icon sprite, and icon fonts -- with npm or Composter. Then choose how you'd like to include
                     the icons with <a href="https://icons.getbootstrap.com/#usage">usage instructions</a>. </p>
-                <div class="copy_text" >
+                <div class="copy_text">
                     <p>$ npm i bootstrap-icons<i class="bi bi-clipboard"></i></p>
                 </div>
                 <div class="copy_text">
@@ -198,25 +198,84 @@
 
             <div class="CDN">
                 <h2>CDN</h2>
-                <p>Include the icon fonts stylesheet—in your website <code>&lt;head&gt;</code> or via <code>@import</code> in CSS—from our CDN and get started in seconds. <a href="https://icons.getbootstrap.com/#icon-font">See icon font docs</a> for examples.</p>
+                <p>Include the icon fonts stylesheet—in your website <code>&lt;head&gt;</code> or via
+                    <code>@import</code> in CSS—from our CDN and get started in seconds. <a
+                        href="https://icons.getbootstrap.com/#icon-font">See icon font docs</a> for examples.
+                </p>
                 <div class="copy_text" id="copy_text">
-                    <p>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"&gt;<i class="bi bi-clipboard"></i></p>
+                    <p>&lt;link rel="stylesheet"
+                        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"&gt;<i
+                            class="bi bi-clipboard"></i></p>
                 </div>
                 <div class="copy_text">
-                    <p>@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");<i class="bi bi-clipboard"></i></p>
+                    <p>@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");<i
+                            class="bi bi-clipboard"></i></p>
                 </div>
             </div>
-        </section>
+    </section>
     </section>
 
     <section class="usage-section container">
         <h2>Usage</h2>
-        <p>Bootstrap Icons are SVGs, so you can include them into your HTML in a few ways depending on how your project is setup. We recommend using a <code>width: 1em</code>  (and optionally <code>height: 1em</code>) for easy resizing via <code>font-size</code>.</p>
+        <p>Bootstrap Icons are SVGs, so you can include them into your HTML in a few ways depending on how your project
+            is setup. We recommend using a <code>width: 1em</code> (and optionally <code>height: 1em</code>) for easy
+            resizing via <code>font-size</code>.</p>
 
-        <h2>Embedded</h2>
-        <p>Embed your icons within the HTML of your page (as opposed to an external image file). Here we’ve used a custom <code>width</code> and <code>height</code>.</p>
-        <div class="copy_text">
-            <p>&lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16"&gt;&lt;path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/&gt;&lt;path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/&gt;&lt;/svg&gt;<i class="bi bi-clipboard"></i></p>
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>Embedded</h2>
+                <p>Embed your icons within the HTML of your page (as opposed to an external image file). Here we’ve used
+                    a
+                    custom <code>width</code> and <code>height</code>.</p>
+            </div>
+
+            <div class="example col-8">
+                <div class="example_code">
+                    <i class="bi bi-emoji-heart-eyes"></i>
+                </div>
+                <div class="copy_text">
+                    <p>&lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi
+                        bi-emoji-heart-eyes" viewBox="0 0 16 16"&gt;&lt;path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0
+                        1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/&gt;&lt;path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498
+                        0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1
+                        .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63
+                        0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756
+                        4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544
+                        1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/&gt;&lt;/svg&gt;<i
+                            class="bi bi-clipboard"></i></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>Sprite</h2>
+                <p>Use the SVG sprite to insert any icon through the &lt;use&gt; element. Use the icon’s filename as the fragment identifier (e.g., <code>toggles</code> is <code>#toggles</code>). SVG sprites allow you to reference an external file similar to an &lt;img&gt; element, but with the power of <code>currentColor</code> for easy theming.<br><br><b>Heads up!</b> There’s an issue with Chrome where <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=470601">&lt;use&gt; doesn’t work across domains</a>. </p>
+            </div>
+
+            <div class="example col-8">
+                <div class="example_code">
+                    <i class="bi bi-suit-heart-fill"></i>
+                    <i class="bi bi-toggles"></i>
+                    <i class="bi bi-shop-window"></i>
+                </div>
+                <div class="copy_text max-height">
+                    <p>&lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
+                        &lt;use xlink:href="bootstrap-icons.svg#heart-fill"/&gt;
+                        &lt;/svg&gt;
+                      <br>
+                      &lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
+                      &lt;use xlink:href="bootstrap-icons.svg#toggles"/&gt;
+                      &lt;/svg&gt;
+                      <br>
+                      &lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
+                      &lt;use xlink:href="bootstrap-icons.svg#shop"/&gt;
+                      &lt;/svg&gt;
+                      <i class="bi bi-clipboard"></i></p>
+                </div>
+
+            </div>
         </div>
     </section>
 
