@@ -16,6 +16,8 @@ body {
     --purple-background: #7431f9;
 
     --background-color: #fff;
+
+    background-color: var(--background-color);
 }
 
 .dark {
@@ -30,6 +32,9 @@ body {
     --purple-background: #6e2cf4;
 
     --background-color: #212529;
+    background-color: var(--background-color);
+    color: var(--text-light);
+
 }
 
 p {
@@ -51,6 +56,16 @@ nav {
 
         * {
             margin: .25rem;
+        }
+
+        .dropdown {
+            * {
+                width: 4rem;
+                margin: 0;
+            }
+            &active {
+                background-color: #fff;
+            }
         }
     }
 }
@@ -103,7 +118,7 @@ nav {
             justify-content: center;
             align-items: center;
 
-            i {
+            .bi {
                 background-color: var(--dark-background);
                 color: var(--text-light);
                 border-radius: 15px;
