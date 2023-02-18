@@ -44,9 +44,22 @@ p {
 nav {
     background-color: var(--purple-background);
 
-    .nav-link {
-        color: var(--text-light);
+    .nav-item {
+        &hover {
+            color: var(--text-light);
+        }
+
+        .active {
+            font-weight: bold;
+            color: var(--text-light) !important;
+        }
+
+        .nav-link {
+            color: var(--text-light);
+
+        }
     }
+
 
     .nav-icons {
         display: flex;
@@ -63,6 +76,7 @@ nav {
                 width: 4rem;
                 margin: 0;
             }
+
             &active {
                 background-color: #fff;
             }

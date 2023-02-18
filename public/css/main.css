@@ -31,7 +31,12 @@ p {
 
 nav {
   background-color: var(--purple-background); }
-  nav .nav-link {
+  nav .nav-itemhover {
+    color: var(--text-light); }
+  nav .nav-item .active {
+    font-weight: bold;
+    color: var(--text-light) !important; }
+  nav .nav-item .nav-link {
     color: var(--text-light); }
   nav .nav-icons {
     display: flex;
