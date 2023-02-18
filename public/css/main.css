@@ -94,13 +94,44 @@ nav {
       align-items: center;
       font-size: 1.5rem; }
 
+.installation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem; }
+  .installation .package-container,
+  .installation .download,
+  .installation .CDN {
+    margin-top: 1.5rem; }
+
 .copy_text {
-  background-color: grey;
+  background-color: var(--dark-background);
+  color: var(--text-light);
   border-radius: 15px;
-  width: fit-content;
-  padding: 1rem; }
+  padding: 1rem;
+  margin: 1rem;
+  height: 4rem;
+  white-space: nowrap;
+  width: 20rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative; }
+  .copy_text p {
+    margin-right: 2rem;
+    width: 25rem;
+    height: 3rem; }
   .copy_text i {
-    margin-left: .5rem; }
+    margin-left: .5rem;
+    z-index: 2;
+    position: absolute;
+    background-color: var(--dark-background);
+    padding: 1rem;
+    right: 1px;
+    top: 6%;
+    color: var(--text-light); }
+
+::-webkit-scrollbar {
+  color: var(--grey-background);
+  border-radius: 10px; }
 
 .figma {
   padding: 1rem;

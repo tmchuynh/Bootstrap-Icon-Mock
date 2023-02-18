@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     --purple-background: #7431f9;
 
     --background-color: #fff;
+
 
     background-color: var(--background-color);
 }
@@ -148,16 +150,55 @@ nav {
     }
 }
 
+.installation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    .package-container,
+    .download,
+    .CDN {
+        margin-top: 1.5rem;
+    }
+}
+
 .copy_text {
-    background-color: grey;
+    background-color: var(--dark-background);
+    color: var(--text-light);
     border-radius: 15px;
-    width: fit-content;
     padding: 1rem;
+    margin: 1rem;
+    height: 4rem;
+    white-space: nowrap;
+    width: 20rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+
+
+    p {
+        margin-right: 2rem;
+        width: 25rem;
+        height: 3rem;
+    }
 
     i {
         margin-left: .5rem;
+        z-index: 2;
+        position: absolute;
+        background-color: var(--dark-background);
+        padding: 1rem;
+        right: 1px;
+        top: 6%;
+        color: var(--text-light);
     }
 }
+
+::-webkit-scrollbar {
+    color: var(--grey-background);
+    border-radius: 10px;
+}
+
 
 .figma {
     padding: 1rem;
