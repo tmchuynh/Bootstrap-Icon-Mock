@@ -123,16 +123,20 @@ nav {
 .icons {
     .icon_boxes {
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
         text-align: center;
+        justify-content: space-between;
         color: var(--text-dark);
 
         .box {
             display: flex;
             flex-wrap: wrap;
+            height: 10rem;
             margin: 1rem;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-content: center;
 
             .bi {
                 background-color: var(--dark-background);
@@ -144,6 +148,10 @@ nav {
                 justify-content: center;
                 align-items: center;
                 font-size: 1.5rem;
+            }
+            p {
+                width: 5rem;
+                font-size: .75rem;
             }
         }
 

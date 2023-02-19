@@ -236,11 +236,7 @@ boombox-fill.svg
 bookshelf.svg
 boombox.svg
 bootstrap-fill.svg
-bootstrap-icons.json
-bootstrap-icons.css
-bootstrap-icons.scss
 bootstrap-reboot.svg
-bootstrap-icons.svg
 border-all.svg
 bootstrap.svg
 border-bottom.svg

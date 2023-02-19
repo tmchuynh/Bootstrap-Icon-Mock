@@ -74,15 +74,19 @@ nav {
 
 .icons .icon_boxes {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   text-align: center;
+  justify-content: space-between;
   color: var(--text-dark); }
   .icons .icon_boxes .box {
     display: flex;
     flex-wrap: wrap;
+    height: 10rem;
     margin: 1rem;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-content: center; }
     .icons .icon_boxes .box .bi {
       background-color: var(--dark-background);
       color: var(--text-light);
@@ -93,6 +97,9 @@ nav {
       justify-content: center;
       align-items: center;
       font-size: 1.5rem; }
+    .icons .icon_boxes .box p {
+      width: 5rem;
+      font-size: .75rem; }
 
 .installation {
   display: flex;

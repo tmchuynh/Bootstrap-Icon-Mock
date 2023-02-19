@@ -1,11 +1,9 @@
-var icon_boxes = document.querySelector(".icon-boxes");
+var icon_boxes = document.querySelector(".icon_boxes");
 
 var icon_names = [];
 
 readTextFile("public/text/icons.txt");
 
-// name of the icon = file name without extension
-// icon class == bi-(file name without extension)
 
 /**
  * It reads a text file and returns the contents of the file as a string
@@ -40,18 +38,37 @@ function manipulateText(text) {
     return icons;
 }
 
+
+// name of the icon = file name without extension
+// icon class == bi-(file name without extension)
+
+$(document).ready(function () {
+    for (var i = 0; i < icon_names.length; i++) {
+        createIconBoxes(icon_names[i]);
+    }
+});
+
 function createIconBoxes(icon_name) {
+
+    var bi_class = "bi-" + icon_name;
+
     var div = document.createElement("div");
     div.classList.add("box");
+
     var icon = document.createElement("div");
     icon.classList.add("icon");
-    var p = document.createElement("p");
-    p.classList.add("bi");
-    p.classList.add(icon_name);
-    icon.appendChild(p);
     div.appendChild(icon);
+
+
+    var i = document.createElement("i");
+    i.classList.add("bi");
+    i.classList.add(bi_class);
+    icon.appendChild(i);
+
+
     var p = document.createElement("p");
     p.innerHTML = icon_name;
     div.appendChild(p);
+
     icon_boxes.appendChild(div);
 }
