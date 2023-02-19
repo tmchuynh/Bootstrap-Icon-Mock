@@ -3,17 +3,22 @@ var icon_boxes = document.querySelector(".icon_boxes");
 var search_box = document.querySelector("#filterIcons");
 
 search_box.addEventListener("keyup", function(event) {
+    /* get the text field */
     search_box.value = event.target.value.toLowerCase();
 
     for (var i = 0; i < icon_boxes.children.length; i++) {
+        /* spliting the box's class last into an array */
         var class_list = icon_boxes.children[i].children[0].children[0].classList;
         class_list = Array.from(class_list);
         class_list = class_list[1];
         class_list = class_list.split("-");
+        /* storing class names in an array */
         var class_names = []
         for (var j = 1; j < class_list.length; j++) {
             class_names.push(class_list[j]);
         }
+        /* Checking if the class name includes the value of the search box. If it does, it displays the
+        icon box. If it doesn't, it hides the icon box. */
         for (var k = 0; k < class_names.length; k++) {
 
             if (class_names[k].includes(search_box.value)) {
@@ -42,6 +47,7 @@ function readTextFile(file) {
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
+                /* converting the raw file to a text file */
                 var allText = rawFile.responseText;
                 allText = allText.replaceAll(".svg", "");
                 icon_names = manipulateText(allText);
@@ -60,6 +66,7 @@ function manipulateText(text) {
     var icons = [];
     text = text.replace(".svg", "");
     text.split("\n").forEach(function (word) {
+        /* spliting the text into an array */
         icons.push(word);
     });
     return icons;
