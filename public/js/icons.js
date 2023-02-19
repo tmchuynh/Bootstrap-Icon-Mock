@@ -1,6 +1,11 @@
 var icon_boxes = document.querySelector(".icon-boxes");
 
+var icon_names = [];
+
 readTextFile("public/text/icons.txt");
+
+// name of the icon = file name without extension
+// icon class == bi-(file name without extension)
 
 /**
  * It reads a text file and returns the contents of the file as a string
@@ -13,7 +18,9 @@ function readTextFile(file) {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
                 var allText = rawFile.responseText;
-                console.log(allText);
+                allText = allText.replaceAll(".svg", "");
+                icon_names = manipulateText(allText);
+                console.log(icon_names);
             }
             else {
                 console.log("error");
@@ -21,6 +28,16 @@ function readTextFile(file) {
         }
     }
     rawFile.send(null);
+}
+
+
+function manipulateText(text) {
+    var icons = [];
+    text = text.replace(".svg", "");
+    text.split("\n").forEach(function (word) {
+        icons.push(word);
+    });
+    return icons;
 }
 
 function createIconBoxes(icon_name) {
