@@ -1,9 +1,36 @@
 var icon_boxes = document.querySelector(".icon_boxes");
 
+var search_box = document.querySelector("#filterIcons");
+
+search_box.addEventListener("keyup", function(event) {
+    search_box.value = event.target.value.toLowerCase();
+
+    for (var i = 0; i < icon_boxes.children.length; i++) {
+        var class_list = icon_boxes.children[i].children[0].children[0].classList;
+        class_list = Array.from(class_list);
+        class_list = class_list[1];
+        class_list = class_list.split("-");
+        var class_names = []
+        for (var j = 1; j < class_list.length; j++) {
+            class_names.push(class_list[j]);
+        }
+        for (var k = 0; k < class_names.length; k++) {
+
+            if (class_names[k].includes(search_box.value)) {
+
+                icon_boxes.children[i].style.display = "flex";
+            }
+            else {
+                icon_boxes.children[i].style.display = "none";
+            }
+        }
+    }
+    
+});
+
 var icon_names = [];
 
 readTextFile("public/text/icons.txt");
-
 
 /**
  * It reads a text file and returns the contents of the file as a string

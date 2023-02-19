@@ -72,6 +72,9 @@ nav {
   .hero hr {
     width: 5rem; }
 
+.hide {
+  display: none; }
+
 .icons .icon_boxes {
   display: flex;
   flex-wrap: wrap;
