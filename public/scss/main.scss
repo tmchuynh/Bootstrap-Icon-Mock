@@ -217,6 +217,13 @@ nav {
         height: 8.9rem;
     }
 
+    &.css-height {
+        height: 15rem;
+    }
+    &.button-height {
+        height: 10rem;
+    }
+
     p {
         margin-right: 2rem;
         width: 25rem;
@@ -242,6 +249,8 @@ nav {
         padding: .5rem;
         justify-content: center;
         align-items: center;
+        margin: 1rem;
+        border: none;
 
         .bi {
             padding: 2rem;
@@ -263,6 +272,10 @@ nav {
 ::-webkit-scrollbar {
     color: var(--grey-background);
     border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
 }
 
 

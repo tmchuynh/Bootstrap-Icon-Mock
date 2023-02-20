@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="icon_boxes container">
-        
+
         </div>
     </section>
 
@@ -215,7 +215,13 @@
         <div class="d-flex mt-3 row">
             <div class="d-flex flex-column col-4">
                 <h2>Sprite</h2>
-                <p>Use the SVG sprite to insert any icon through the &lt;use&gt; element. Use the icon’s filename as the fragment identifier (e.g., <code>toggles</code> is <code>#toggles</code>). SVG sprites allow you to reference an external file similar to an &lt;img&gt; element, but with the power of <code>currentColor</code> for easy theming.<br><br><b>Heads up!</b> There’s an issue with Chrome where <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=470601">&lt;use&gt; doesn’t work across domains</a>. </p>
+                <p>Use the SVG sprite to insert any icon through the &lt;use&gt; element. Use the icon’s filename as the
+                    fragment identifier (e.g., <code>toggles</code> is <code>#toggles</code>). SVG sprites allow you to
+                    reference an external file similar to an &lt;img&gt; element, but with the power of
+                    <code>currentColor</code> for easy theming.<br><br><b>Heads up!</b> There’s an issue with Chrome
+                    where <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=470601">&lt;use&gt; doesn’t
+                        work across domains</a>.
+                </p>
             </div>
 
             <div class="example col-8">
@@ -228,26 +234,197 @@
                     <p>&lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
                         &lt;use xlink:href="bootstrap-icons.svg#heart-fill"/&gt;
                         &lt;/svg&gt;
-                      <br>
-                      &lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
-                      &lt;use xlink:href="bootstrap-icons.svg#toggles"/&gt;
-                      &lt;/svg&gt;
-                      <br>
-                      &lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
-                      &lt;use xlink:href="bootstrap-icons.svg#shop"/&gt;
-                      &lt;/svg&gt;
-                      <i class="bi bi-clipboard"></i></p>
+                        <br>
+                        &lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
+                        &lt;use xlink:href="bootstrap-icons.svg#toggles"/&gt;
+                        &lt;/svg&gt;
+                        <br>
+                        &lt;svg class="bi" width="32" height="32" fill="currentColor"&gt;
+                        &lt;use xlink:href="bootstrap-icons.svg#shop"/&gt;
+                        &lt;/svg&gt;
+                        <i class="bi bi-clipboard"></i>
+                    </p>
                 </div>
 
             </div>
         </div>
+
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>External image</h2>
+                <p>Copy the Bootstrap Icons SVGs to your directory of choice and reference them like normal images with
+                    the <code>&lt;img&gt;</code> element.</p>
+            </div>
+
+            <div class="example col-8">
+                <div class="example_code">
+                    <i class="bi bi-bootstrap"></i>
+                </div>
+                <div class="copy_text">
+                    <p>&lt;img src="/assets/img/bootstrap.svg" alt="Bootstrap" width="32" height="32"&gt;
+                        <i class="bi bi-clipboard"></i>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>Icon font</h2>
+                <p>Icon fonts with classes for every icon are also included for Bootstrap Icons. Include the icon web
+                    fonts in your page via CSS, then reference the class names as needed in your HTML (e.g.,
+                    <code>&lt;i class="bi-alarm-clock"&gt;&lt;/i&gt;</code> ).
+                </p>
+                <br>
+                <p>Use <code>font-size</code> and <code>color</code> to change the icon appearance.</p>
+            </div>
+
+            <div class="d-flex flex-column col-8">
+                <div class="example mt-2">
+                    <div class="example_code">
+                        <i class="bi-alarm"></i>
+                    </div>
+                    <div class="copy_text">
+                        <p>&lt;i class="bi-alarm"&gt;&lt;/i&gt;
+                            <i class="bi bi-clipboard"></i>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="example mt-4">
+                    <div class="example_code">
+                        <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
+                    </div>
+                    <div class="copy_text">
+                        <p>&lt;i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"&gt;&lt;/i&gt;
+                            <i class="bi bi-clipboard"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>CSS</h2>
+                <p>You can also use the SVG within your CSS (be sure to escape any characters, such as <code>#</code> to
+                    <code>%23</code> when specifying hex color values). When no dimensions are specified via
+                    <code>width</code> and <code>height</code> on the <code>&lt;svg&gt;</code>, the icon will fill the
+                    available space.<br><br>The <code>viewBox</code> attribute is required if you wish to resize icons
+                    with <code>background-size</code>. Note that the <code>xmlns</code> attribute is required.</p>
+            </div>
+
+            <div class="example col-8 ">
+                <div class="copy_text css-height">
+                    <p>.bi::before {<br>
+                        display: inline-block;<br>
+                        content: "";<br>
+                        vertical-align: -.125em;<br>
+                        background-image: url("data:image/svg+xml,&lt;svg viewBox='0 0 16 16' fill='%23333'
+                        xmlns='http://www.w3.org/2000/svg'&gt;&lt;path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3
+                        1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/&gt;&lt;/svg&gt;");<br>
+                        background-repeat: no-repeat;<br>
+                        background-size: 1rem 1rem;<br>
+                        }
+                        <i class="bi bi-clipboard"></i>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>Styling</h2>
+                <p>Color can be changed by setting a <code>.text-*</code> class or custom CSS:</p>
+            </div>
+
+            <div class="example col-8">
+                <div class="example_code">
+                    <i class="bi bi-exclamation-triangle text-success"></i>
+                </div>
+                <div class="copy_text max-height">
+                    <p>&lt;svg&gt; class="bi bi-exclamation-triangle text-success" width="32" height="32"
+                        fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"&gt;<br>
+                        ...<br>
+                        &lt;/svg&gt;
+                        <i class="bi bi-clipboard"></i>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex mt-3 row">
+            <div class="d-flex flex-column col-4">
+                <h2>Accessibility</h2>
+                <p>For purely decorative icons, add <code>aria-hidden="true"</code>. Otherwise, provide an appropriate
+                    text alternative. Depending on which method you’re using to add the icons, and where you’re using
+                    them (e.g. as standalone images, or as the only content of a button or similar control), there are
+                    various possible approaches. Here are a few examples:</p>
+            </div>
+
+            <div class="d-flex flex-column col-8">
+                <div class="example">
+                    <div class="example_code">
+                        <img src="public/images/bootstrap-icons-1.10.3/bootstrap.svg" height="25px" alt="Bootstrap">
+                    </div>
+                    <div class="copy_text">
+                        <p>&lt;!-- alt="..." on &lt;img&gt; element --&gt;
+                            &lt;img src="/assets/img/bootstrap.svg" alt="Bootstrap" ...&gt;
+                            <i class="bi bi-clipboard"></i>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="example mt-2">
+                    <div class="example_code">
+                        <i class="bi-github" role="img" style="font-size: 2em" aria-label="GitHub"></i>
+                        <i class="bi-tools" role="img" style="font-size: 2em" aria-label="Tools"></i>
+                    </div>
+                    <div class="copy_text max-height">
+                        <p>&lt;svg class="bi" ... role="img" aria-label="Tools"&gt;<br>
+                            &lt;use xlink:href="bootstrap-icons.svg#tools"/&gt;<br>
+                            &lt;/svg&gt;
+                            <i class="bi bi-clipboard"></i>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="example mt-2">
+                    <div class="example_code">
+                        <button type="button" class="btn btn-primary" aria-label="Mute">
+                           <i class="bi bi-volume-mute-fill"></i>
+                            </button>
+                    </div>
+                    <div class="copy_text button-height">
+                        <p>&lt;!-- aria-label="..." on the control --&gt;<br>
+                            &lt;button ... aria-label="Mute"&gt;<br>
+                            &lt;svg class="bi bi-volume-mute-fill" aria-hidden="true" ...&gt;
+                              ...<br>
+                              &lt;/svg&gt;<br>
+                              &lt;/button&gt;
+                            <i class="bi bi-clipboard"></i>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script type="module" src="public/js/themes.js"></script>
     <script type="module" src="public/js/icons.js"></script>
 </body>

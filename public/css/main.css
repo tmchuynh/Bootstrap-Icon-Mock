@@ -143,6 +143,10 @@ nav {
     color: var(--text-light); }
   .copy_text.max-height {
     height: 8.9rem; }
+  .copy_text.css-height {
+    height: 15rem; }
+  .copy_text.button-height {
+    height: 10rem; }
   .copy_text p {
     margin-right: 2rem;
     width: 25rem;
@@ -161,7 +165,9 @@ nav {
   .example .example_code {
     padding: .5rem;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: 1rem;
+    border: none; }
     .example .example_code .bi {
       padding: 2rem;
       margin: auto;
@@ -176,6 +182,9 @@ nav {
 ::-webkit-scrollbar {
   color: var(--grey-background);
   border-radius: 10px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 0px; }
 
 .figma {
   padding: 1rem;
