@@ -17,7 +17,7 @@ body {
     --purple-background: #7431f9;
 
     --background-color: #fff;
-
+    --footer-background: #f8f9fa;
 
     background-color: var(--background-color);
 }
@@ -34,6 +34,7 @@ body {
     --purple-background: #6e2cf4;
 
     --background-color: #212529;
+    --footer-background: #2b3035;
     background-color: var(--background-color);
     color: var(--text-light);
 
@@ -71,6 +72,9 @@ nav {
 
         * {
             margin: .25rem;
+        }
+        a {
+            color: var(--text-light);
         }
 
         .dropdown {
@@ -296,4 +300,15 @@ nav {
     border-radius: 15px;
     height: fit-content;
     margin-left: 1rem;
+}
+
+footer {
+    background-color: var(--footer-background);
+    a {
+        text-decoration: none;
+        color: var(--text-dark);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

@@ -12,6 +12,7 @@ body {
   --grey-background: #e9ecef;
   --purple-background: #7431f9;
   --background-color: #fff;
+  --footer-background: #f8f9fa;
   background-color: var(--background-color); }
 
 .dark {
@@ -23,6 +24,7 @@ body {
   --grey-background: #343a41;
   --purple-background: #6e2cf4;
   --background-color: #212529;
+  --footer-background: #2b3035;
   background-color: var(--background-color);
   color: var(--text-light); }
 
@@ -45,6 +47,8 @@ nav {
     align-items: center; }
     nav .nav-icons * {
       margin: .25rem; }
+    nav .nav-icons a {
+      color: var(--text-light); }
     nav .nav-icons .dropdown * {
       width: 4rem;
       margin: 0; }
@@ -201,3 +205,11 @@ nav {
   border-radius: 15px;
   height: fit-content;
   margin-left: 1rem; }
+
+footer {
+  background-color: var(--footer-background); }
+  footer a {
+    text-decoration: none;
+    color: var(--text-dark); }
+    footer a:hover {
+      text-decoration: underline; }
