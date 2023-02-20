@@ -26,7 +26,7 @@ body {
     --text-dark: #fff;
     --text-light: #fff;
 
-    --badge-background: hsla(194, 57%, 12%, 0.788);
+    --badge-background: hsla(191, 15%, 86%, 0.788);
     --badge-text-color: #257b91;
 
     --dark-background: #343a41;
@@ -124,7 +124,17 @@ nav {
     display: none;
 }
 
+
+
 .icons {
+    .form-control {
+        &:focus {
+            border: .25px solid grey;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
     .icon_boxes {
         display: flex;
         flex-wrap: wrap;
@@ -153,6 +163,7 @@ nav {
                 align-items: center;
                 font-size: 1.5rem;
             }
+
             p {
                 width: 5rem;
                 font-size: .75rem;
@@ -166,6 +177,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
+
     .package-container,
     .download,
     .CDN {
@@ -188,6 +200,7 @@ nav {
     overflow-x: scroll;
     overflow-y: hidden;
     position: relative;
+
     i {
         margin-left: .5rem;
         z-index: 2;
@@ -256,5 +269,6 @@ nav {
     padding: 1rem;
     border: 1px solid white;
     border-radius: 15px;
+    height: fit-content;
     margin-left: 1rem;
 }
