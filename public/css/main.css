@@ -128,10 +128,19 @@ nav {
   margin: 1rem;
   height: 4rem;
   white-space: nowrap;
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
   width: 20rem;
   overflow-x: scroll;
   overflow-y: hidden;
   position: relative; }
+  .copy_text.border-none {
+    border: none;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important; }
   .copy_text i {
     margin-left: .5rem;
     z-index: 2;
