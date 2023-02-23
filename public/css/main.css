@@ -213,3 +213,5 @@ footer {
     color: var(--text-dark); }
     footer a:hover {
       text-decoration: underline; }
+  footer span {
+    margin-bottom: 2rem; }
