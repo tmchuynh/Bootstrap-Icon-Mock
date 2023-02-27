@@ -148,10 +148,10 @@ nav {
   .copy_text i {
     margin-left: .5rem;
     z-index: 2;
-    position: sticky;
+    position: absolute;
     background-color: var(--dark-background);
     padding: 1rem;
-    right: -17px;
+    right: -1px;
     top: -10px;
     color: var(--text-light); }
   .copy_text.max-height {
