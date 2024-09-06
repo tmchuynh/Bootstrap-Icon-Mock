@@ -23,7 +23,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.19.2",
     "fs": "^0.0.1-security",
-    "nodemon": "^2.0.20",
+    "nodemon": "^3.1.4",
     "requirejs": "^2.3.7"
   }
 }
