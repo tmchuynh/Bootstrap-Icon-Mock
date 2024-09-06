@@ -24,6 +24,6 @@
     "express": "^4.19.2",
     "fs": "^0.0.1-security",
     "nodemon": "^2.0.20",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.7"
   }
 }
