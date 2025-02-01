@@ -1,7 +1,7 @@
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Bootstrap Icon Mock" />
 
-  &#xa0;
+&#xa0;
 
 </div>
 
@@ -25,12 +25,13 @@
 
 <!-- Status -->
 
-🚧  Bootstrap Icon Mock 🚀 Under construction...  🚧
+# About
 
+A mock of the Bootstrap Icons website
 
 <br>
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Starting
 
 ```bash
 # Clone this project
@@ -47,10 +48,9 @@ $ yarn start
 
 ```
 
-## :memo: License ##
+## :memo: License
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
 
 Made with :heart: by <a href="https://github.com/tmchuynh" target="_blank">Tina Huynh</a>
 
